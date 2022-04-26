@@ -4,7 +4,7 @@
 
     <div class="list-group list-rest">
         <a *ngFor="let item of getHistorial" href="#" class="list-group-item list-group-item-action">
-            {{item}}
+            {{item | titlecase}}
         </a>
     </div>
 </div>
