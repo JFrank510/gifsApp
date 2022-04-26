@@ -3,7 +3,7 @@
     <hr class="text-white"/>
 
     <div class="list-group list-rest">
-        <a *ngFor="let item of getHistorial" href="#" class="list-group-item list-group-item-action">
+        <a *ngFor="let item of getHistorial" (click)="buscar(item)" href="#" class="list-group-item list-group-item-action">
             {{item | titlecase}}
         </a>
     </div>
